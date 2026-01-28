@@ -1,0 +1,46 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+app-example/
+
+# Native - Ignorar binarios y archivos pesados de Android
+android/build/
+android/.gradle/
+android/app/build/
+android/local.properties
+*.apk
+*.aar
+*.jks
+
+# Native - Secrets y llaves
+*.orig.*
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# NOTA: Hemos eliminado /android de la lista de ignorados 
+# para que los cambios en la config nativa se guarden en Git.
